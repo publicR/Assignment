@@ -4,7 +4,7 @@ var path = require('path');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 3000;
 require('dotenv').config()
 var dblogger = require('./Models/logger');
 const http = require('http').createServer(app)

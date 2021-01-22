@@ -118,3 +118,32 @@ module.exports.uploadUserList = [
                     return apiResponse.ErrorResponse(res, err);
                 }
             })];
+
+
+
+
+
+
+
+// @todo: We can also upload file at S3 bucket but i have not any account that;s why I have not uploaded....Below I have explain how we can upload.
+/*
+const uploadFile = (fileName) => {
+    // Read content from the file
+    const fileContent = fs.readFileSync(fileName);
+
+    // Setting up S3 upload parameters
+    const params = {
+        Bucket: BUCKET_NAME,
+        Key: 'cat.jpg', // File name you want to save as in S3
+        Body: fileContent
+    };
+
+    // Uploading files to the bucket
+    s3.upload(params, function (err, data) {
+        if (err) {
+            throw err;
+        }
+        console.log(`File uploaded successfully. ${data.Location}`);
+    });
+};
+*/

@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "dd021b2a-8112-430d-8679-661baae95c27",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Single user register",
+			"item": [
+				{
+					"name": "http://localhost:3001/user-register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Jitendra singh\",\n    \"lastName\":\" thakur\",\n    \"mobile\": 9759836657,\n    \"password\":\"qwertyuiop\",\n    \"isActive\": true,\n    \"userName\":\"jite@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/user-register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user-register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user login",
+			"item": [
+				{
+					"name": "http://localhost:3001/user-login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"password\":\"qwertyuio\",\n    \"userName\":\"jite@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/user-login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user-login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Upload user list",
+			"item": [
+				{
+					"name": "http://localhost:3000/uploadUserList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": null,
+									"type": "file"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/uploadUserList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"uploadUserList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
